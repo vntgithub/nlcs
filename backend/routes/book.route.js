@@ -1,11 +1,10 @@
 const express = require('express');
 const router = express.Router();
+const bookController = require('../controller/book.controller');
 
-let Book = require('../models/book.model');
 
-router.get('/', (req, res) => {
-	Book.find()
-		.then(book => res.json(book))
-		.catch(err => res.status(400).json('ErrL ' + err));
-})
+
+router.get('/getAllBook', bookController.getAllBook);
+router.post('/addBook', bookController.addBook);
+router.patch('/update', bookController.update)
 module.exports = router;
