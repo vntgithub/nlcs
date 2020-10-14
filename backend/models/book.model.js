@@ -2,11 +2,11 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const bookSchema = new Schema({
+	// _id: mongoose.Types.ObjectId,
 	name: String,
-	descreption: String,
-	topic: String,
+	author: String,
+	price: Number,
 	urlimg: String,
-	price: Number
 });
 
 const Book = mongoose.model('Book', bookSchema, 'book');

@@ -12,8 +12,8 @@ const usersRoute = require('./routes/user.route');
 
 app.use(cors());
 app.use(express.json());
-app.use('/book', bookRoutes);
-app.use('/user', usersRoute);
+app.use('/api/book', bookRoutes);
+app.use('/api/user', usersRoute);
 
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
