@@ -47,7 +47,7 @@ const TopMenu = (props) => {
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  <Link className="link-dropdown" to="/login">Login</Link>
+                  <Link className="link-dropdown" to="login">Login</Link>
                 </DropdownItem>
                 <DropdownItem>
                   <Link className="link-dropdown" to="/sigin">Sigin</Link>
